@@ -1,0 +1,10 @@
+---
+# tasks file for roles/elastic_stack
+
+- name: Execute install_Elastic_Stack_Ubuntu.yml
+  ansible.builtin.include_tasks:
+    file: install_Elastic_Stack_Ubuntu.yml
+
+- name: Execute install_Elastic_Stack_CentOS.yml
+  ansible.builtin.include_tasks:
+    file: install_Elastic_Stack_CentOS.yml
